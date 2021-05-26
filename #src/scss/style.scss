@@ -1,0 +1,801 @@
+//<МИКСИНЫ>===============================================================================================
+@import "mixins";
+//</МИКСИНЫ>===============================================================================================
+
+//<ШРИФТЫ>===============================================================================================
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,italic,700);
+//<Подключаем шрифты>=======================================================================================
+//&display=swap&subset=cyrillic-ext
+@import "fonts";
+//</Подключаем шрифты>=======================================================================================
+
+//<Иконочные шрифты>==========================================================================================
+//@import "icons";
+//</Иконочные шрифты>==========================================================================================
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontFamily: "Open Sans";
+//</Шрифт по умолчанию>==========================================================================================
+
+//</ШРИФТЫ>=======================================================================================================
+
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+$minWidth: 320px;
+$maxWidth: 1440;
+$maxWidthContainer: 1280;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+//</ПЕРЕМЕННЫЕ>===========================================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "null";
+body {
+    color: #000;
+    font-size: 14px;
+    &._lock {
+        overflow: hidden;
+    }
+}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+._container {
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+    @media (max-width: $md1+px) {
+        max-width: 970px;
+    }
+    @media (max-width: $md2+px) {
+        max-width: 750px;
+    }
+    @media (max-width: $md3+px) {
+        max-width: none;
+        padding: 0 10px;
+    }
+}
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+@import "forms";
+@import "ui";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+//@import "datepicker";
+//@import "lightgallery";
+//@import "pagging";
+@import "popup";
+@import "header";
+@import "footer";
+@import "home";
+@import "specialties";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+.page {
+    flex: 1 1 auto;
+}
+//===================================================================================================================================
+
+//</ОСНОВНОЙ БЛОК>====================================================================================================
+.about-us {
+    margin: 0px 0px 50px 0px;
+    &__body {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        @media (max-width: $md3+px) {
+            flex-direction: column;
+        }
+    }
+
+    &__information {
+        text-align: center;
+        max-width: 575px;
+    }
+
+    &__title {
+        font-family: "Banny-BoldRound";
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 1.33;
+        text-align: center;
+        color: #000000;
+        text-transform: uppercase;
+        margin: 40px 0px 0px 0px;
+    }
+    &__line {
+        width: 59px;
+        height: 5px;
+        border-radius: 50px;
+        background-color: #e8c300;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+    &__text-bold {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.56;
+    }
+
+    &__text {
+        margin: 10px 0px 0px 0px;
+        font-size: 14px;
+        line-height: 1.33;
+    }
+
+    &__pictures {
+        display: flex;
+        flex: 1 1 auto;
+        position: relative;
+        margin: 40px 60px 0px 0px;
+        height: 100%;
+        width: 100%;
+        @media (max-width: $md2+px) {
+            margin: 60px -50px 0px 0px;
+        }
+    }
+
+    &__image {
+        position: relative;
+        flex: 1 1 auto;
+        z-index: 2;
+        height: 475px;
+        width: 475px;
+        top: 0;
+        left: 0;
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+    }
+
+    &__square {
+        @media (max-width: $md2+px) {
+            display: none;
+        }
+    }
+}
+//======================================================================
+.our-team {
+    position: relative;
+    &__main {
+        position: relative;
+    }
+
+    &__bg-image {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__our {
+        line-height: 1.17;
+        font-size: 12px;
+        letter-spacing: 6px;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 40px 0px 0px 0px;
+        @media (max-width: $md2+px) {
+            padding: 40px 0px 40px 0px;
+        }
+        @media (max-width: $md4+px) {
+            padding: 40px 0px 0px 0px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        @media (max-width: $md2+px) {
+            display: block;
+        }
+    }
+
+    &__information {
+        text-align: center;
+        max-width: 575px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+
+    &__title {
+        font-family: "Banny-BoldRound";
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 1.33;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin: 40px 0px 0px 0px;
+        @media (max-width: $md2+px) {
+            margin: 20 0;
+        }
+        @media (max-width: $md4+px) {
+            margin: 0;
+        }
+    }
+    &__line {
+        width: 59px;
+        height: 5px;
+        border-radius: 50px;
+        background-color: #e8c300;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+    &__text-bold {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.56;
+        color: #ffffff;
+    }
+
+    &__text {
+        margin: 10px 0px 0px 0px;
+        font-size: 14px;
+        line-height: 1.33;
+        color: #ffffff;
+        @media (max-width: $md2+px) {
+            padding: 0px 0px 40px 0px;
+        }
+    }
+
+    &__pictures {
+        margin: 50px 0px 100px 0px;
+        width: 100%;
+        height: 100%;
+        @media (max-width: $md2+px) {
+            margin: 0px 0px 0px 0px;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 475px;
+    }
+}
+//===============
+.book {
+    &__body {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    &__form {
+        flex: 1 1 50%;
+        align-items: center;
+        margin: 140px 0px 0px 0px;
+        @media (max-width: $md3+px) {
+            margin: 40px 0px 0px 0px;
+        }
+    }
+
+    &__title {
+        font-family: "Banny-BoldRound";
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 1.33;
+        text-align: center;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+    &__line {
+        width: 59px;
+        height: 5px;
+        border-radius: 50px;
+        background-color: #e8c300;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+    &__form-body {
+        align-items: center;
+    }
+
+    &__pictures {
+        display: flex;
+        flex: 1 1 50%;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin: 100px 0px 0px 0px;
+        @media (max-width: 1100+px) {
+            margin: 100px -60px 0px 0px;
+        }
+        @media (max-width: $md2+px) {
+            display: none;
+        }
+    }
+
+    &__image {
+        position: relative;
+        flex: 1 1 auto;
+        z-index: 2;
+        height: 475px;
+        width: 475px;
+        top: 0;
+        left: 0;
+    }
+
+    &__square {
+        @media (max-width: 1100+px) {
+            display: none;
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0px;
+        &_text {
+            font-size: 12px;
+            line-height: 1;
+            text-align: center;
+            color: rgba(51, 51, 51, 0.5);
+            margin: 0 10px;
+            span {
+                font-weight: bold;
+            }
+        }
+
+        &_phone {
+            font-size: 12px;
+            line-height: 1;
+            text-align: center;
+            color: rgba(51, 51, 51, 0.5);
+            font-weight: bold;
+        }
+    }
+}
+
+.form-body {
+    display: flex;
+    width: 100%;
+    @media (max-width: $md3+px) {
+        display: block;
+    }
+
+    &__column {
+        flex: 1 0 25%;
+        margin: 0px 10px 0px 0px;
+        @media (max-width: $md3+px) {
+            margin: 0;
+        }
+        &_right {
+            margin: 0px 0px 0px 10px;
+            @media (max-width: $md3+px) {
+                margin: 0;
+            }
+        }
+    }
+    &__select {
+        margin: 10px 0px 10px 0px;
+        &_l {
+            margin: 20px 0px 10px 0px;
+        }
+    }
+    &__input {
+        width: 100%;
+        border-radius: 5px;
+        background-color: #e5e5e5;
+        height: 60px;
+        align-items: center;
+        margin: 10px 0px 10px 0px;
+        padding: 0px 0px 0px 10px;
+    }
+}
+//===============
+.specialties {
+    &_content {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        @media (max-width: $md2+px) {
+            display: block;
+            align-items: center;
+            margin: 0 auto;
+        }
+    }
+
+    &_pictures {
+        margin: 50px 0px 100px 80px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: $md1+px) {
+            margin: 0px 0px 0px 0px;
+        }
+        @media (max-width: $md2+px) {
+            overflow: hidden !important;
+            align-items: center;
+            margin: 0 auto;
+        }
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+    }
+
+    &__main {
+        position: relative;
+        padding: 0px 0px 40px 0px;
+    }
+
+    &__bg-image {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__nameSlaide {
+        line-height: 1.17;
+        font-size: 12px;
+        letter-spacing: 6px;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 40px 0px 0px 0px;
+        @media (max-width: $md2+px) {
+            padding: 40px 0px 40px 0px;
+        }
+        @media (max-width: $md4+px) {
+            padding: 40px 0px 0px 0px;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 475px;
+        @media (max-width: $md2+px) {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            img {
+                position: relative !important;
+                flex: 1 1 auto !important;
+            }
+        }
+        @media (max-width: $md3+px) {
+            height: 340px;
+            width: 340px;
+        }
+    }
+
+    &__information {
+        text-align: center;
+        max-width: 575px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+
+    &__title {
+        font-family: "Banny-BoldRound";
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 1.33;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin: 40px 0px 0px 0px;
+        @media (max-width: $md2+px) {
+            margin: 20 0;
+        }
+        @media (max-width: $md4+px) {
+            margin: 0;
+        }
+    }
+
+    &__line {
+        width: 59px;
+        height: 5px;
+        border-radius: 50px;
+        background-color: #e8c300;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+    &__text-bold {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.56;
+        color: #ffffff;
+    }
+
+    &__text {
+        margin: 10px 0px 20px 0px;
+        font-size: 14px;
+        line-height: 1.33;
+        color: #ffffff;
+        @media (max-width: $md2+px) {
+            padding: 0px 0px 40px 0px;
+        }
+    }
+}
+//===============
+.menu {
+    &__container {
+    }
+
+    &__wrapper {
+        position: relative;
+        margin: 80px 0px 0px 0px;
+    }
+
+    &__title {
+        font-family: "Banny-BoldRound";
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 1.33;
+        text-align: center;
+        color: #000000;
+    }
+
+    &__line {
+        width: 59px;
+        height: 5px;
+        border-radius: 50px;
+        background-color: #e8c300;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+    &__text {
+        margin: 20px auto 40px auto;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.5;
+        text-align: center;
+        color: #000000;
+        max-width: 565px;
+    }
+
+    &__choice {
+    }
+
+    &__menu-liner {
+        padding: 0px 0px 20px 0px;
+        ul {
+            display: flex;
+            justify-content: center;
+            @media (max-width: $md3+px) {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    &__menu-liner-name {
+        position: relative;
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1.5;
+        color: #333333;
+        padding: 15px 30px;
+        border-right: 1px solid #000;
+        &_last {
+            border-right: none;
+        }
+        @media (max-width: $md3+px) {
+            margin: 10px 0px 30px 0px;
+        }
+    }
+
+    &__dishes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 0px 20px 0px;
+    }
+
+    &__dish {
+        flex: 1 1 33.333%;
+        display: flex;
+        padding: 0px 0px 20px 0px;
+        @media (max-width: $md1+px) {
+            flex: 1 1 50%;
+        }
+        @media (max-width: $md3+px) {
+            flex: 1 1 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+    }
+
+    &__dish-name {
+    }
+
+    &__name-nomination {
+        font-family: "Banny-BoldRound";
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1;
+        text-align: left;
+    }
+
+    &__name-test {
+        font-size: 12px;
+        color: rgba(51, 51, 51, 0.5);
+    }
+
+    &__dish-price {
+        font-family: "Banny-BoldRound";
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1;
+        text-align: right;
+    }
+}
+
+//=============
+.photo {
+    &__wrapper {
+        display: flex;
+        position: relative;
+        @media (max-width: $md1+px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__picture {
+        height: 360px;
+        flex: 1 1 auto;
+        position: relative;
+        margin: 2.5px 2.5px;
+        @media (max-width: $md1+px) {
+            flex: 1 1 48%;
+        }
+        @media (max-width: $md3+px) {
+            flex: 1 1 100%;
+        }
+    }
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+//===
+.contact {
+    &__container {
+    }
+
+    &__wrapper {
+        padding: 90px 0px;
+    }
+
+    &__title {
+        font-family: "Banny-BoldRound";
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 1.33;
+        text-align: center;
+        color: #000000;
+    }
+
+    &__line {
+        width: 59px;
+        height: 5px;
+        border-radius: 50px;
+        background-color: #e8c300;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+    &__text {
+        margin: 20px auto 40px auto;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.5;
+        text-align: center;
+        color: #000000;
+        max-width: 565px;
+    }
+
+    &__forms {
+    }
+
+    &__form-input {
+        display: flex;
+        flex-wrap: wrap;
+        @media (max-width: $md3+px) {
+            flex-direction: column;
+        }
+    }
+
+    &__form {
+        flex: 1 1 25%;
+        margin: 0px 5px -10px 5px;
+
+        &_big {
+            flex: 1 1 100%;
+            margin: 0px 5px 0px 5px;
+            input {
+                height: 120px;
+                text-wrap: wrap;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex: 1 1 50%;
+        justify-content: center;
+        align-items: center;
+        ul {
+            display: flex;
+            @media (max-width: 550px) {
+                flex-direction: column;
+                margin: 20px 0px 0px 0px;
+            }
+        }
+        @media (max-width: $md2+px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__link {
+        display: flex;
+
+        &_text {
+            @media (max-width: 550px) {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    &__button {
+        flex: 1 1 50%;
+        @media (max-width: $md2+px) {
+            height: 60px;
+        }
+    }
+}
+//=====
+.map {
+    height: 800px;
+    @media (max-width: $md2+px) {
+        height: 600px;
+    }
+    @media (max-width: $md3+px) {
+        height: 400px;
+    }
+}

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html',{})
+        <main class="page">
+            <section class="about-us">
+                <div class='about-us__container _container'>
+                    <div class="about-us__body">
+                        <div class="about-us__information">
+                            <div class="about-us__title">about us</div>
+                            <div class="about-us__line"></div>
+                            <div class="about-us__text-bold">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie
+                                est
+                                a, tempor magna.
+                            </div>
+                            <div class="about-us__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+                                posuere. Morbi non ultrices
+                                ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin
+                                lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
+                                semper
+                                laoreet.</div>
+                        </div>
+                        <div class="about-us__pictures">
+                            <div class="about-us__image _ibg"><img src="./img/abaut/01.png" alt=""></div>
+                            <div class="about-us__square square"><img src="./img/square.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="our-team">
+                <div class="our-team__main">
+                    <div class="our-team__bg-image _ibg">
+                        <img src="./img/our-team_bg.png" alt="">
+                    </div>
+                    <div class='our-team__container _container'>
+                        <div class="our-team__our">OUR TEAM</div>
+                        <div class="our-team__content">
+                            <div class="our-team__pictures">
+                                <div class="our-team__image _ibg"><img src="./img/abaut/02.png" alt=""></div>
+                                <div class="our-team__square square square_l"><img src="./img/square.svg" alt=""></div>
+                            </div>
+                            <div class="our-team__information">
+                                <div class="our-team__title">MASTER CHEF</div>
+                                <div class="our-team__line"></div>
+                                <div class="our-team__text-bold">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+                                    molestie
+                                    est
+                                    a, tempor magna.
+                                </div>
+                                <div class="our-team__text">Integer ullamcorper neque eu purus euismod, ac faucibus
+                                    mauris
+                                    posuere. Morbi non ultrices
+                                    ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                                    sollicitudin
+                                    lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla
+                                    facilisis
+                                    semper
+                                    laoreet.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="book">
+                <div class='book__container _container'>
+                    <div class="book__body">
+                        <div class="book__form">
+                            <div class="book__title">book a table</div>
+                            <div class="book__line"></div>
+                            <div class="book__form-body form-body">
+                                <div class="form-body__column">
+                                    <input class="form-body__input" autocomplete='off' type='text' name='form[]' data-error='Ошибка' data-value='Name' id=''>
+                                    <input class="form-body__input" autocomplete='off' type='text' name='form[]' data-error='Ошибка' data-value='Phone' id=''>
+                                    <input class="form-body__input" autocomplete='off' type='text' name='form[]' data-error='Ошибка' data-value='Date (mm/dd)' id=''>
+                                </div>
+                                <div class="form-body__column form-body__column_right">
+                                    <input class="form-body__input" autocomplete='off' type='text' name='form[]' data-error='Ошибка' data-value='Email' id=''>
+                                    <div class="form-body__select">
+                                        <select>
+                                            <option value="1">People</option>
+                                            <option value="2">1-2</option>
+                                            <option value="2">3-5</option>
+                                            <option value="2">5-10</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-body__select form-body__select_l">
+                                        <select>
+                                            <option value="1">Time</option>
+                                            <option value="2">Time_1</option>
+                                            <option value="2">Time_2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book__button">
+                                <a href="" class="book__button btn btn_big">BOOK NOW</a>
+                            </div>
+                        </div>
+                        <div class="book__pictures">
+                            <div class="book__image _ibg"><img src="./img/abaut/01.png" alt=""></div>
+                            <div class="book__square square"><img src="./img/square.svg" alt=""></div>
+                        </div>
+
+                    </div>
+                    <div class="book__info">
+                        <div class="book__info_text">Mon - Fri: <span>8PM - 10PM</span>, Sat - Sun: <span>8PM -
+                                3AM,</span>
+                        </div>
+                        <a href="+40 729 131 637" class="book__info_phone">Phone:<span> +40 729 131 637/+40 726 458
+                                782</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="specialties">
+                <div class="specialties__main">
+                    <div class="specialties__bg-image _ibg">
+                        <img src="./img/specialty's-bg.png" alt="">
+                    </div>
+                    <div class="specialties__container swiper-container _container">
+                        <!-- Additional required wrapper -->
+                        <div class="specialties__wrapper swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="specialties__skide swiper-slide">
+                                <div class="specialties__nameSlaide">specialties</div>
+                                <div class="specialties_content">
+                                    <div class="specialties_pictures">
+                                        <div class="specialties__image _ibg"><img src="./img/specialties_01.png" alt="">
+                                        </div>
+                                        <div class="specialties__square square square_ls"><img src="./img/square.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="specialties__information">
+                                        <div class="specialties__title">MASTER CHEF</div>
+                                        <div class="specialties__line"></div>
+                                        <div class="specialties__text-bold">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit
+                                            maximus,
+                                            molestie
+                                            est
+                                            a, tempor magna.
+                                        </div>
+                                        <div class="specialties__text">Integer ullamcorper neque eu purus euismod, ac
+                                            faucibus
+                                            mauris
+                                            posuere. Morbi non ultrices
+                                            ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                                            sollicitudin
+                                            lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla
+                                            facilisis
+                                            semper
+                                            laoreet.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="specialties__skide swiper-slide">
+                                <div class="specialties__nameSlaide">specialties</div>
+                                <div class="specialties_content">
+                                    <div class="specialties_pictures">
+                                        <div class="specialties__image"><img src="./img/specialties_01.png" alt="">
+                                        </div>
+                                        <div class="specialties__square square square_ls"><img src="./img/square.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="specialties__information">
+                                        <div class="specialties__title">MASTER CHEF</div>
+                                        <div class="specialties__line"></div>
+                                        <div class="specialties__text-bold">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit
+                                            maximus,
+                                            molestie
+                                            est
+                                            a, tempor magna.
+                                        </div>
+                                        <div class="specialties__text">Integer ullamcorper neque eu purus euismod, ac
+                                            faucibus
+                                            mauris
+                                            posuere. Morbi non ultrices
+                                            ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                                            sollicitudin
+                                            lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla
+                                            facilisis
+                                            semper
+                                            laoreet.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="specialties__skide swiper-slide">
+                                <div class="specialties__nameSlaide">specialties</div>
+                                <div class="specialties_content">
+                                    <div class="specialties_pictures">
+                                        <div class="specialties__image"><img src="./img/specialties_01.png" alt="">
+                                        </div>
+                                        <div class="specialties__square square square_ls"><img src="./img/square.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="specialties__information">
+                                        <div class="specialties__title">MASTER CHEF</div>
+                                        <div class="specialties__line"></div>
+                                        <div class="specialties__text-bold">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit
+                                            maximus,
+                                            molestie
+                                            est
+                                            a, tempor magna.
+                                        </div>
+                                        <div class="specialties__text">Integer ullamcorper neque eu purus euismod, ac
+                                            faucibus
+                                            mauris
+                                            posuere. Morbi non ultrices
+                                            ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                                            sollicitudin
+                                            lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla
+                                            facilisis
+                                            semper
+                                            laoreet.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="menu">
+                <div class='menu__container _container'>
+                    <div class="menu__wrapper">
+                        <div class="menu__title">DELICIOUS MENU</div>
+                        <div class="menu__line"></div>
+                        <div class="menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
+                        <div class="menu__choice">
+                            <nav class="menu__menu-liner">
+                                <ul>
+                                    <li><a href="" class="menu__menu-liner-name">SOUPE</a></li>
+                                    <li><a href="" class="menu__menu-liner-name">PIZZA</a></li>
+                                    <li><a href="" class="menu__menu-liner-name">PASTA</a></li>
+                                    <li><a href="" class="menu__menu-liner-name">DESERT</a></li>
+                                    <li><a href="" class="menu__menu-liner-name">WINE</a></li>
+                                    <li><a href="" class="menu__menu-liner-name">BEER</a></li>
+                                    <li><a href="" class="menu__menu-liner-name menu__menu-liner-name_last">DRINKS</a></li>
+                                </ul>
+                            </nav>
+                            <div class="menu__dishes">
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                                <div class="menu__dish">
+                                    <div class="menu__dish-name">
+                                        <div class="menu__name-nomination">PIZZA QUATRO STAGIONI . . . .
+                                        </div>
+                                        <div class="menu__name-test">Integer ullamcorper neque eu purus euismod</div>
+                                    </div>
+                                    <div class="menu__dish-price"> 55,68 USD</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="photo">
+                <div class="photo__wrapper">
+                    <div class="photo__picture">
+                        <div class="photo__image _ibg">
+                            <img src="./img/photo/01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="photo__picture">
+                        <div class="photo__image _ibg">
+                            <img src="./img/photo/02.png" alt="">
+                        </div>
+                    </div>
+                    <div class="photo__picture">
+                        <div class="photo__image _ibg">
+                            <img src="./img/photo/03.png" alt="">
+                        </div>
+                    </div>
+                    <div class="photo__picture">
+                        <div class="photo__image _ibg">
+                            <img src="./img/photo/04.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="contact">
+                <div class='contact__container _container'>
+                    <div class="contact__wrapper">
+                        <div class="contact__title">CONTACT</div>
+                        <div class="contact__line"></div>
+                        <div class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
+                        <div class="contact__forms">
+                            <div class="contact__form-input">
+                                <div class="contact__form">
+
+                                    <input class="form-body__input" autocomplete='off' type='text' name='form[]' data-error='Ошибка' data-value='Nume' id=''>
+                                </div>
+                                <div class="contact__form">
+                                    <input class="form-body__input" autocomplete='off' type='text' name='form[]' data-error='Ошибка' data-value='Email' id=''>
+                                </div>
+                                <div class="contact__form">
+                                    <input class="form-body__input" autocomplete='off' type='text' name='form[]' data-error='Ошибка' data-value='Nume' id=''>
+                                </div>
+                                <div class="contact__form contact__form_big">
+                                    <input class="form-body__input" autocomplete='off' type='text' name='form[]' data-error='Ошибка' data-value='Message' id=''>
+                                </div>
+                            </div>
+                            <div class="contact__links">
+                                <ul>
+                                    <li>
+                                        <a href='' class="contact__link">
+                                            <div class="contact__link_text">5th London Boulevard, U.K.</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href='' class="contact__link">
+                                            <div class="contact__link_text">+40 729 131 637/+40 726 458 782</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href='' class="contact__link">
+                                            <div class="contact__link_text">office@mindblister.com</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="contact__button btn btn_sb">SEND MESSAGE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1477.3976465913124!2d-0.21438647466166708!3d51.48244711649462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760fa2c376ea1f%3A0xa1db77ac807859fa!2zMjk2QSBNdW5zdGVyIFJkLCBGdWxoYW0sIExvbmRvbiBTVzYgNkJILCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sru!4v1614692384296!5m2!1sru!2sru"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </main>
+        @@include('_footer.html',{})
+    </div>
+    @@include('_js.html',{})
+</body>
+
+</html>
